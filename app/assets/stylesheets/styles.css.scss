@@ -19,6 +19,36 @@
   color: #999;
 }
 
+.business_body__header {
+  text-align: center;
+  border-bottom: 1px solid #C8C8C8;
+}
+
+.business_body__header h2 {
+  font-size: 3em;
+}
+
+.business_tellme {
+  padding-top: 50px;
+}
+
+.business_tellme p {
+  font-size: 2em;
+  color: #31B53C;
+}
+
+.business_tellme__img {
+  width: 100%;
+  border: 1px solid black;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.business_tellme__number h3 {
+  text-align: center;
+  font-size: 4em;
+}
+
 .business_image {
   border: 1px solid #999;
   border-radius: 5px;
