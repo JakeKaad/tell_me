@@ -1,6 +1,8 @@
-
-<div class="container">
-  <div class="row">
+<div class="container dash-container">
+  <%= render 'sidebar' %>
     <h1>Hello, this is working.</h1>
-  </div>
+
+    <% @images.each do |image| %>
+      <%= image_tag(image.url) %>
+    <% end %>
 </div>
