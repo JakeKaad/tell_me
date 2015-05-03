@@ -10,7 +10,4 @@ class UsersController < ApplicationController
   def create
   end
 
-  def business
-  end
-
 end
