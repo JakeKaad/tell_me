@@ -49,10 +49,25 @@
   font-size: 1.5em;
 }
 
-.business_header a {
+.business_header__link {
   color: #999;
 }
 
+.business_header__link:hover {
+  color: #999;
+}
+
+.business_header__register {
+  font-size: 0.75em;
+  background-color: #9EF09E;
+  background-opacity: .5;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.business_header__register a{
+  margin: 35px 0;
+}
 .business_body__header {
   text-align: center;
   border-bottom: 1px solid #C8C8C8;
@@ -67,7 +82,7 @@
 }
 
 .business_tellme p {
-  font-size: 2em;
+  font-size: 1.5em;
   color: #31B53C;
 }
 
@@ -83,10 +98,20 @@
   font-size: 4em;
 }
 
+.business_tellme__update-message {
+  position: relative;
+  top: 50px;
+}
+
 .business_image {
   border: 1px solid #999;
   border-radius: 5px;
   box-shadow: 0 0 3px #999;
+}
+
+.img-circle {
+  border-radius: 100%;
+  margin-top: 15px;
 }
 
 .navbar {
@@ -97,4 +122,8 @@
 .side {
   height: 100%;
   position: absolute;
+}
+
+*, p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato';
 }

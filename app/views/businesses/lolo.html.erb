@@ -2,18 +2,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 business_image text-center">
-        <%= image_tag('tiltitup.png', alt: "User profile picture", class: "img-responsive") %>
-        <h3>Tilt It Up</h3>
+        <%= image_tag('lolo.jpg', class: 'img-responsive img-circle', alt: 'Business Profile Picture') %>
+        <h3>House of Lolo</h3>
       </div>
       <div class="col-md-offset-1 col-md-7">
         <h2>Current Information</h2>
-        <p><strong>Name:</strong> Tilt It Up</p>
-        <p><strong>Location:</strong> 1355 NW Everett St. Suite 120, Portland, OR 97209</p>
-        <p><strong>Menu:</strong> Signature Burgers and Sandwiches</p>
-        <p><strong>Phone:</strong> (503) 894-9528</p>
-        <p><strong>Website:</strong> <a href="http://www.tiltitup.com/">tiltitup.com</a></p>
+        <p><strong>Name:</strong> House of Lolo</p>
+        <p><strong>Location:</strong> 221 NW 11th Ave, Portland, OR 97209</p>
+        <p><strong>Merchandise:</strong> Fashion</p>
+        <p><strong>Phone:</strong> 503.224.5240</p>
+        <p><strong>Website:</strong> <a class="business_header__link" href="http://www.houseoflolo.com/">houseoflolo.com</a></p>
 
-        <a class="btn btn-default btn-lg pull-right" href="/business_dashboard/edit">Edit Information</a>
+        <a class="btn btn-default btn-lg pull-right" href="#">Edit Information</a>
       </div>
     </div>
   </div>
@@ -42,16 +42,13 @@
               <h3><%= (35...89).to_a.shuffle.pop %></h3>
             </div>
             <div class="col-md-offset-1 col-md-3">
-              <%= link_to image.url do %>
-                <%= image_tag(image.url, class:"business_tellme__img") %>
-              <% end %>
+              <%= image_tag(image.url, class:"business_tellme__img") %>
             </div>
             <div class="col-md-offset-1 col-md-4">
-              <p>You have tellme's available!</p>
-              <br>
-              <p>
-                <a href="/business/register">Register to connect!</a>
-              </p>
+              <%= image.business.message %>
+            </div>
+            <div class="col-md-offset-1 col-md-4 business_tellme__update-message">
+              <button class="btn btn-info">Update Message</button>
             </div>
           </div>
         </div>
