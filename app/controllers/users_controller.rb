@@ -28,7 +28,10 @@ class UsersController < ApplicationController
     redirect_to dashboard_path
   end
 
-  def create
+  def reset
+    Image.first.delete
+    Image.first.delete
+    redirect_to dashboard_path
   end
 
   def create_new_image(url, business, location)
