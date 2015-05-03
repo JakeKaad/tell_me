@@ -17,11 +17,25 @@
 @import "bootstrap";
 @import "styles";
 
-.side {
-  height: 100%;
-}
-
 .gram-pic {
   height: 100px;
   width: 100px;
+}
+
+.side {
+  height: 100%;
+  position: absolute;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.dash-image {
+  padding: 2em;
+}
+
+.biz-name {
+  margin-left: 40%;
 }

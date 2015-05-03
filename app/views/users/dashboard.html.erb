@@ -6,13 +6,12 @@
       <div class="row">
           <% @images.each do |image| %>
             <div class='image-container col-md-12'>
-              <div class="">
-              <%= image_tag(image.url) %>
-
+              <div class='image-container well row'>
+                <h2 class='biz-name row'><%= image.business.name %> </h2>
+                <div class='well col-md-8 pull-right message'> <%= image.business.message %></div>
+                <%= image_tag(image.url, class: 'dash-image col-md-4') %>
               </div>
             </div>
           <% end %>
-      </div>
-    </div>
   </div>
 </div>
