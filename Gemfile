@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+ source 'https://rubygems.org'
 
 gem 'rails', '4.2.1'
 gem 'sass-rails', '~> 5.0'
@@ -11,6 +11,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'httparty'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'bootswatch-rails'
+gem 'twilio-ruby'
 
 
 group :development, :test do

@@ -1,16 +1,36 @@
-<div class="container dash-container">
+<div class="container user_header">
   <div class="row">
     <%= render 'sidebar' %>
-    <div class="col-md-9">
+    <div class="col-md-offset-1 col-md-8 user_tellme">
+
       <div class="row">
+        <div class="col-md-9">
+          <h2>Your #tellMe's</h2>
+        </div>
+
+        <div class="col-md-3">
+          <form class="form-inline user_refresh" action="/jakekaad" method="get">
+            <button class="btn btn-info" submit="submit">#tellMe Now</button>
+          </form>
+        </div>
+
+      </div>
+      <div class='row'>
+
         <% @images.each do |image| %>
-          <div class='image-container col-md-12'>
-            <div class='image-container well row'>
-              <h2 class='biz-name row'><%= image.business.name %> </h2>
-              <div class='well col-md-8 pull-right message'> <%= image.business.message %></div>
-              <%= image_tag(image.url, class: 'dash-image col-md-4') %>
-            </div>
+        <div class='col-md-12 user_tellme__post'>
+          <div class="col-md-4">
+            <%= link_to image.url do %>
+              <%= image_tag(image.url, class: 'business_tellme__img') %>
+            <% end %>
+            <p class="user_tellme__business-name"><%= image.business.name %></p>
           </div>
+          <div class="col-md-8">
+            <p class="user_tellme__body">
+              <%= image.business.message %>
+            </p>
+          </div>
+        </div>
         <% end %>
       </div>
     </div>

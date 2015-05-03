@@ -1,3 +1,37 @@
+.img-logo {
+  height: 52px;
+  position: relative;
+  bottom: 15px;
+}
+
+.user_header {
+  padding-top: 50px;
+}
+
+.user_tellme h2 {
+  font-size: 3em;
+  border-bottom: 1px solid #C8C8C8;
+  margin-bottom: 50px;
+}
+
+.user_tellme__body {
+  font-size: 1.2em;
+}
+
+.user_tellme__post {
+  margin-bottom: 20px;
+}
+
+.user_tellme__business-name {
+  text-align: center;
+  font-size: 1.7em;
+}
+
+.user_refresh {
+  position: relative;
+  top: 25px;
+}
+
 .business_header {
   padding: 50px 0;
   background: snow;
@@ -52,6 +86,7 @@
 .business_image {
   border: 1px solid #999;
   border-radius: 5px;
+  box-shadow: 0 0 3px #999;
 }
 
 .navbar {

@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'users#dashboard'
   get '/tilt', to: 'businesses#tilt'
   get '/lolo', to: 'businesses#lolo'
+  get '/jakekaad', to: 'users#jakekaad'
+  get 'reset', to: 'users#reset'
 end
