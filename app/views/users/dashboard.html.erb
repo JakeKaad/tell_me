@@ -1,16 +1,21 @@
-<div class="container dash-container">
+<div class="container user_header">
   <div class="row">
     <%= render 'sidebar' %>
-    <div class="col-md-9">
-      <div class="row">
+    <div class="col-md-offset-1 col-md-8 user_tellme">
+      <h2>Your #tellMe's</h2>
+      <div class='row'>
+
         <% @images.each do |image| %>
-          <div class='image-container col-md-12'>
-            <div class='image-container well row'>
-              <h2 class='biz-name row'><%= image.business.name %> </h2>
-              <div class='well col-md-8 pull-right message'> <%= image.business.message %></div>
-              <%= image_tag(image.url, class: 'dash-image col-md-4') %>
-            </div>
+        <div class='col-md-12'>
+          <div class="col-md-3">
+            <%= image_tag(image.url, class: 'business_tellme__img') %>
+            <p><%= image.business.name %></p>
           </div>
+
+          <div class="col-md-9">
+            <%= image.business.message %>
+          </div>
+        </div>
         <% end %>
       </div>
     </div>
