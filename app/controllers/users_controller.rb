@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
 
-  def new
+  def dashboard
+  end
 
+  def new
   end
 
   def create
-
   end
 
 end
