@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/dashboard', to: 'users#dashboard'
   get '/business_dashboard', to: 'businesses#dashboard'
   get '/jakekaad', to: 'users#jakekaad'
+  get 'reset', to: 'users#reset'
 end
