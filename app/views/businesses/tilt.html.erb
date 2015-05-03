@@ -1,0 +1,59 @@
+<div class="business_header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 business_image text-center">
+        <img src="http://static1.squarespace.com/static/543eef57e4b04bbe6d9de410/t/543f4502e4b07d76437fd486/1413526254783/?format=1000w" class="img-responsive" alt="" />
+        <h3>Tilt It Up</h3>
+      </div>
+      <div class="col-md-offset-1 col-md-7">
+        <h2>Current Information</h2>
+        <p><strong>Name:</strong> Tilt It Up</p>
+        <p><strong>Location:</strong> 1355 NW Everett St. Suite 120, Portland, OR 97209</p>
+        <p><strong>Menu:</strong> Signature Burgers and Sandwiches</p>
+        <p><strong>Phone:</strong> (503) 894-9528</p>
+        <p><strong>Website:</strong> <a href="http://www.tiltitup.com/">tiltitup.com</a></p>
+
+        <a class="btn btn-default btn-lg pull-right" href="#">Edit Information</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="business_body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 business_body__header">
+        <div class="row">
+          <div class="col-md-3">
+            <h2>count</h2>
+          </div>
+
+          <div class="col-md-offset-1 col-md-7">
+            <h2>#tellMe</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- each of the image posts goes here -->
+      <% @images.each do |image| %>
+        <div class="col-md-12 business_tellme">
+          <div class="row">
+            <div class="col-md-3 business_tellme__number">
+              <h3><%= (35...89).to_a.shuffle.pop %></h3>
+            </div>
+            <div class="col-md-offset-1 col-md-3">
+              <%= image_tag(image.url, class:"business_tellme__img") %>
+            </div>
+            <div class="col-md-offset-1 col-md-4">
+              <p>You have tellme's available!</p>
+              <br>
+              <p>
+                <a href="">Register to connect!</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
