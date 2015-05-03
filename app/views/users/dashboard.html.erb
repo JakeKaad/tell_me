@@ -2,17 +2,31 @@
   <div class="row">
     <%= render 'sidebar' %>
     <div class="col-md-offset-1 col-md-8 user_tellme">
-      <h2>Your #tellMe's</h2>
+
+      <div class="row">
+        <div class="col-md-9">
+          <h2>Your #tellMe's</h2>
+        </div>
+
+        <div class="col-md-3">
+          <form class="form-inline user_refresh" action="" method="post">
+            <button class="btn btn-success" submit="submit">Refresh</button>
+          </form>
+        </div>
+
+      </div>
       <div class='row'>
 
         <% @images.each do |image| %>
         <div class='col-md-12 user_tellme__post'>
           <div class="col-md-4">
-            <%= image_tag(image.url, class: 'business_tellme__img') %>
-            <p><%= image.business.name %></p>
+            <%= link_to image.url do %>
+              <%= image_tag(image.url, class: 'business_tellme__img') %>
+            <% end %>
+            <p class="user_tellme__business-name"><%= image.business.name %></p>
           </div>
           <div class="col-md-8">
-            <p>
+            <p class="user_tellme__body">
               <%= image.business.message %>
             </p>
           </div>
