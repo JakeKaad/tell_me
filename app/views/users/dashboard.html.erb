@@ -3,6 +3,10 @@
     <h1>Hello, this is working.</h1>
 
     <% @images.each do |image| %>
-      <%= image_tag(image.url) %>
+
+      <div class='image-container'>
+        <%= image_tag(image.url) %>
+      </div>
+
     <% end %>
 </div>
