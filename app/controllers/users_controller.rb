@@ -20,10 +20,24 @@ class UsersController < ApplicationController
       :body => Business.last.message,
     })
 
+    image_one = create_new_image("https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-15/e15/11142194_741753562608854_411882935_n.jpg", 1, "TILT - Handcrafted Food & Drink, Built For The American Workforce.")
+    image_two = create_new_image("https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-15/e15/11055620_865978136792042_1030059351_n.jpg", 2, "House of Lolo - Portland, Oregon")
+    DisplayUser.first.images << image_one
+    DisplayUser.first.images << image_two
+
     redirect_to dashboard_path
   end
 
   def create
   end
 
+  def create_new_image(url, business, location)
+    Image.create(url: url, business_id: business, location: location)
+  end
+
+  # house of lolo image for demo
+  # https://instagram.com/p/0rLk7bqgut/?taken-by=houseoflolo
+
+  # tilt image for demo
+  # https://instagram.com/p/1wP-c6nd9V/?taken-by=tiltitup
 end
