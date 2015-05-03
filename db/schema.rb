@@ -11,12 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150503030734) do
+ActiveRecord::Schema.define(version: 20150503173533) do
 
   create_table "businesses", force: :cascade do |t|
     t.text     "message"
     t.boolean  "subscribed"
     t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "display_users", force: :cascade do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -27,6 +32,7 @@ ActiveRecord::Schema.define(version: 20150503030734) do
     t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "display_user_id"
   end
 
 end

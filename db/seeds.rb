@@ -9,7 +9,8 @@
 tilt = Business.create(subscribed: false, name: "Tiltitup", )
 
 
-Image.create(location: "TILT - Handcrafted Food & Drink, Built For The American Workforce.", business: tilt, url: "https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/e15/11176204_458996540930237_138886560_n.jpg"
+Image.create(location: "TILT - Handcrafted Food & Drink, Built For The American Workforce.", business: tilt, url: "https://scontent.cdninstagram.com/hphotos-xfa1/t51.2885-15/e15/11176204_458996540930237_138886560_n.jpg",
+  message: '1355 NW EVERETT ST. SUITE 120 PORTLAND, OR 97209  (503) 894-9528  HOURS  Sun-Thurs: 7am-11pm  Fri &#38; Sat: 7am-Midnight'
 )
 
 Image.create(location: "TILT - Handcrafted Food & Drink, Built For The American Workforce.", business: tilt,
