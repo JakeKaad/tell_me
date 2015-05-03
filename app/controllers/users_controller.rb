@@ -43,4 +43,7 @@ class UsersController < ApplicationController
 
   # tilt image for demo
   # https://instagram.com/p/1wP-c6nd9V/?taken-by=tiltitup
+
+  # our website
+  # https://glacial-badlands-4111.herokuapp.com/
 end
