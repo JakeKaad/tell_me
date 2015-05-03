@@ -6,7 +6,7 @@ class StaticPagesController < ApplicationController
   end
 
   def tellme
-    json =  HTTParty.get('https://api.instagram.com/v1/tags/lololifestyle/media/recent?client_id=15acbbc0dd63470f978495f6521d7c0e')
+    json =  HTTParty.get('https://api.instagram.com/v1/tags/tiltitup/media/recent?client_id=15acbbc0dd63470f978495f6521d7c0e&count=35')
     @image_urls = []
     binding.pry
     json["data"].each do |item|
@@ -26,7 +26,7 @@ class StaticPagesController < ApplicationController
   end
 
   def stuff
-    image_location = json["data"][0]["location"]["name"]
+    image_location = json["tellme_dashboardata"][0]["location"]["name"]
     standard_resolution = json["data"][0]["images"]["standard_resolution"]["url"]
   end
 end
