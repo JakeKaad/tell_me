@@ -6,14 +6,15 @@
       <div class='row'>
 
         <% @images.each do |image| %>
-        <div class='col-md-12'>
-          <div class="col-md-3">
+        <div class='col-md-12 user_tellme__post'>
+          <div class="col-md-4">
             <%= image_tag(image.url, class: 'business_tellme__img') %>
             <p><%= image.business.name %></p>
           </div>
-
-          <div class="col-md-9">
-            <%= image.business.message %>
+          <div class="col-md-8">
+            <p>
+              <%= image.business.message %>
+            </p>
           </div>
         </div>
         <% end %>
