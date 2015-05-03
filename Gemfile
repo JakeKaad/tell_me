@@ -8,10 +8,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'oauth2'
-gem 'instagram'
-gem 'bower-rails'
-gem 'angular-rails-templates'
+gem 'httparty'
+gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootswatch-rails'
 
 
 group :development, :test do
