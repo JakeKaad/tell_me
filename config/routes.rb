@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/oauth/connect', to: 'oauth#connect'
   get '/oauth/callback', to: 'oauth#callback'
   get '/dashboard', to: 'users#dashboard'
+  get '/business_dashboard', to: 'businesses#dashboard'
 end
