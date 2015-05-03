@@ -1,13 +1,18 @@
 <div class="container dash-container">
-  <%= render 'sidebar' %>
-
+  <div class="row">
+    <%= render 'sidebar' %>
+    <div class="col-md-9">
     <h1>Hello, this is working.</h1>
+      <div class="row">
+          <% @images.each do |image| %>
+            <div class='image-container col-md-12'>
+              <div class="">
+              <%= image_tag(image.url) %>
 
-    <% @images.each do |image| %>
-
-      <div class='image-container'>
-        <%= image_tag(image.url) %>
+              </div>
+            </div>
+          <% end %>
       </div>
-
-    <% end %>
+    </div>
+  </div>
 </div>
